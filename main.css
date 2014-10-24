@@ -1,4 +1,19 @@
-﻿body {
+﻿/* COLOURS
+    Body background(tan):       #D2B48C
+    Table Text(white):          #FFFFFF
+    Tables(coral):              #F08080
+    Table-header(Yellow):       #FFFF99
+    Links(silver):              #696969
+    Detail header(silver)       #696969
+
+    #D2B48C (tan)
+    #F08080 (coral) with #FFFFFF (white) or #696969 (silver) text
+    #FFFF99 (yellow) with #696969 (silver) or #F08080 (coral) tex
+
+*/
+
+body {
+    background-color:#D2B48C;
 }
 div {
     

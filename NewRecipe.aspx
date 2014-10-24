@@ -4,12 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Add New Recipe</title>
+    <link rel="stylesheet" type="text/css"href="main.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <h1>Wicked Easy Recipes</h1>
+        <h3>Using 5 ingedients or Less!</h3>
+    <nav>
+            <a href="Default.aspx">Home</a> |
+            <a href="NewRecipe.aspx">New Recipe</a>|
+            <a href="AboutUs.aspx">About Us</a> |
+            <a href="Contact.aspx">Contact</a>
+        </nav>
     </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_group1_cpetit_recipe %>" DeleteCommand="DELETE FROM [cpetit_hw6] WHERE [Id] = @Id" InsertCommand="INSERT INTO [cpetit_hw6] ([Author], [RecipeName], [Notes], [Preperation], [Ingredient1], [Ingredient2], [Ingredient3], [Ingredient4], [Ingredient5]) VALUES (@Author, @RecipeName, @Notes, @Preperation, @Ingredient1, @Ingredient2, @Ingredient3, @Ingredient4, @Ingredient5)" SelectCommand="SELECT * FROM [cpetit_hw6]" UpdateCommand="UPDATE [cpetit_hw6] SET [Author] = @Author, [RecipeName] = @RecipeName, [Notes] = @Notes, [Preperation] = @Preperation, [Ingredient1] = @Ingredient1, [Ingredient2] = @Ingredient2, [Ingredient3] = @Ingredient3, [Ingredient4] = @Ingredient4, [Ingredient5] = @Ingredient5 WHERE [Id] = @Id">
             <DeleteParameters>
