@@ -50,16 +50,9 @@
     </div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="sqlcpetit_hw6">
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="Author" HeaderText="Author" SortExpression="Author" />
                 <asp:BoundField DataField="RecipeName" HeaderText="Recipe Name" SortExpression="RecipeName" />
-                <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-                <asp:BoundField DataField="Preperation" HeaderText="Preperation" SortExpression="Preperation" />
-                <asp:BoundField DataField="Ingredient1" HeaderText="Ingredient 1" SortExpression="Ingredient1" />
-                <asp:BoundField DataField="Ingredient2" HeaderText="Ingredient 2" SortExpression="Ingredient2" />
-                <asp:BoundField DataField="Ingredient3" HeaderText="Ingredient 3" SortExpression="Ingredient3" />
-                <asp:BoundField DataField="Ingredient4" HeaderText="Ingredient 4" SortExpression="Ingredient4" />
-                <asp:BoundField DataField="Ingredient5" HeaderText="Ingredient 5" SortExpression="Ingredient5" />
+                <asp:BoundField DataField="Author" HeaderText="Author" SortExpression="Author" />
+                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="RecipeDetails.aspx?Id={0}" Text="Select" />
             </Columns>
         </asp:GridView>
     </form>
