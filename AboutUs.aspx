@@ -24,5 +24,9 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     </div>
     </form>
+    <div>
+        <div class="foot" >&#169 2014 - Software Development &amp Design<br />
+    </div>
+    </div>
 </body>
 </html>

@@ -58,7 +58,7 @@
             </EditItemTemplate>
             <InsertItemTemplate>
 
-                <table>
+                <table class="Grid">
                     <tr>
                         <td style="text-align:right;">
                             Recipe Name:
@@ -66,7 +66,7 @@
                         <td>
                             <asp:TextBox ID="tbRecipeName" runat="server" Text='<%# Bind("RecipeName") %>' />
                         </td>
-                        <td>
+                        <td  class="alt">
                             <asp:RequiredFieldValidator ID="rfvRecipeName" runat="server" ErrorMessage="Recipe name is required" CssClass="validationError" ControlToValidate="tbRecipeName"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
@@ -77,7 +77,7 @@
                         <td>
                             <asp:TextBox ID="tbAuthor" runat="server" Text='<%# Bind("Author") %>' />
                         </td>
-                        <td>
+                        <td  class="alt">
                             <asp:RequiredFieldValidator ID="rfvAuthor" runat="server" ErrorMessage="Author Name is required" CssClass="validationError" ControlToValidate="tbAuthor"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
@@ -88,7 +88,7 @@
                         <td>
                             <asp:TextBox ID="tbIngredient1" runat="server" Text='<%# Bind("Ingredient1") %>' />
                         </td>
-                        <td>
+                        <td  class="alt">
                             <asp:RequiredFieldValidator ID="rfvIngredient1" runat="server" ErrorMessage="Please enter first ingredient" CssClass="validationError" ControlToValidate="tbIngredient1"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
@@ -131,7 +131,7 @@
                         <td>
                             <asp:TextBox ID="tbPreperation" runat="server" Text='<%# Bind("Preperation") %>' />
                         </td>
-                        <td>
+                        <td class="alt">
                             <asp:RequiredFieldValidator ID="rfvPrep" runat="server" ErrorMessage="Please explain food preperation before submiting" CssClass="validationError" ControlToValidate="tbPreperation"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
@@ -161,5 +161,7 @@
         </asp:FormView>
         
     </form>
+    <div class="foot" >&#169 2014 - Software Development &amp Design<br />
+    </div>
 </body>
 </html>

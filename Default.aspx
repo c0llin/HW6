@@ -48,7 +48,7 @@
             <a href="Contact.aspx">Contact</a>
         </nav>
     </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="sqlcpetit_hw6">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="sqlcpetit_hw6" CssClass="Grid">
             <Columns>
                 <asp:BoundField DataField="RecipeName" HeaderText="Recipe Name" SortExpression="RecipeName" />
                 <asp:BoundField DataField="Author" HeaderText="Author" SortExpression="Author" />
@@ -56,5 +56,8 @@
             </Columns>
         </asp:GridView>
     </form>
+    
+        <div class="foot" >&#169 2014 - Software Development &amp Design<br />
+    </div>
 </body>
 </html>

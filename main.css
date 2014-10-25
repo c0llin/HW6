@@ -11,6 +11,27 @@
     #FFFF99 (yellow) with #696969 (silver) or #F08080 (coral) tex
 
 */
+.Grid { border: solid 4px #FFFFFF; }
+.Grid td
+{
+border: solid 1px #FFFFFF;
+margin: 1px 1px 1px 1px;
+padding: 1px 1px 1px 1px;
+text-align: center;
+background-color: #F08080;
+color: #FFFFFF;
+}
+.Grid th
+{
+font-weight: bold;
+background-color: #FFFF99;
+color:#696969;
+}
+.GridItem
+{
+background-color: #F08080;
+
+}
 
 body {
     background-color:#D2B48C;
@@ -30,5 +51,15 @@ form{
     border: 0px ;
     margin: 5px;
 }
+.Grid .alt{
+    border:none;
+    background-color:#D2B48C;
+}
+.validationError {color:red; 
+                  font-weight:bold;
+                  border:none;
 
-.validationError {color:red; font-weight:bold;}
+}
+
+
+ 

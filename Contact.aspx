@@ -43,5 +43,7 @@
         <%End If%>
     </div>
     </form>
+    <div class="foot" >&#169 2014 - Software Development &amp Design<br />
+    </div>
 </body>
 </html>
