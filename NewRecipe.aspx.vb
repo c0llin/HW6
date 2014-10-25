@@ -2,11 +2,13 @@
 Partial Class View
     Inherits System.Web.UI.Page
 
-    Protected Sub newRecipeInsertView_ItemInserted(sender As Object, e As DetailsViewInsertedEventArgs) Handles newRecipeInsertView.ItemInserted
-        Response.Redirect("Default.aspx")
-    End Sub
+    
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        newRecipeInsertView.Focus() 'cursor change on load
+        form1.Focus()
+    End Sub
+
+    Protected Sub FormView1_ItemInserted(sender As Object, e As FormViewInsertedEventArgs) Handles FormView1.ItemInserted
+        Response.Redirect("Default.aspx")
     End Sub
 End Class
