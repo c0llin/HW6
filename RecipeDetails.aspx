@@ -55,7 +55,6 @@
         </asp:SqlDataSource>
         <asp:DetailsView ID="RecpieDetailsView" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="50px" Width="253px" CssClass="Grid">
             <Fields>
-                <asp:TemplateField HeaderText="Recipe Details"></asp:TemplateField>
                 <asp:BoundField DataField="Id" HeaderText="Recipie Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                 <asp:TemplateField HeaderText="Recipe Name" SortExpression="RecipeName">
                     <EditItemTemplate>

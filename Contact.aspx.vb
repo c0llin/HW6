@@ -7,8 +7,8 @@ Partial Class Contact
         Dim msg As New MailMessage
         Dim client As New SmtpClient
 
-        'msg.To.Add("michael-colbert@uiowa.edu")  'destination email address
-        msg.To.Add("petit.collin@gmail.com") ' Test address
+        msg.To.Add("michael-colbert@uiowa.edu")  'destination email address
+        'msg.To.Add("petit.collin@gmail.com") ' Test address
         msg.From = New MailAddress(senderAddress.Text)  'get the address from the textbox
         msg.Subject = "Wicked Easy Recipes contact message"  'set the message subject line
         msg.Body = senderMessage.Text  'get the message body from the textbox
@@ -28,7 +28,7 @@ Partial Class Contact
         confirmSent.Text = "Thank you.  Your message has been sent."
 
         'After the message has displayed for 2 seconds, "reload" the page.
-        Response.AddHeader("REFRESH", "2;URL=default.aspx")
+        Response.AddHeader("REFRESH", "3;URL=default.aspx")
 
 
     End Sub
