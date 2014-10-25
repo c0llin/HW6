@@ -30,3 +30,5 @@ form{
     border: 0px ;
     margin: 5px;
 }
+
+.validationError {color:red; font-weight:bold;}
